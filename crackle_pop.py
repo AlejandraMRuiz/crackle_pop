@@ -6,21 +6,19 @@
 #If it's divisible by 5, print Pop.
 #If it's divisible by both 3 and 5, print CracklePop. 
 
-#first commit
+#this commit solves crackle pop ;)
 
 def crackle_pop(i):
-	while (i >= 1 and i <= 100):
-		if (i % 3 == 0):
+	while i >= 1 and i <= 100:
+		if (i % 3 == 0) and (i % 5 == 0):
+    			print("CracklePop")
+		elif (i % 3 == 0):
 			print("Crackle")
 		elif (i % 5 == 0):
-			print("Pop")
-		elif (i % 3 == 0 and i % 5 == 0):
-			print("CracklePop")
+		 	print("Pop")
 		else:
 			print(i)
-	#i += 1
+		i += 1
 
 crackle_pop(1)
 
-
-#if bugged: consider a for loop instead 
